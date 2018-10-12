@@ -1,0 +1,55 @@
+*{
+    padding:0px;
+    margin:0px;
+    position: relative;
+}
+
+div.title{
+    font-size:25px;
+    text-align: center;
+    margin-top:100px;
+}
+
+table{
+    display:block;
+    margin-top: 20px;
+    position:absolute;
+    left:50%;
+    transform:translate(-50%);
+
+    tr{
+        // &:nth-of-type(1){
+        //     background-color:#ccc;
+        // }
+        //因为thead、tbody的tr是断开的，第二个tr群也是从1开始
+        &:nth-of-type(odd){
+            background-color:rgb(204, 255, 255);
+        }
+        &:nth-of-type(even){
+            background-color:rgb(255, 255, 204);
+        }
+    }
+
+    tr.title{
+        background-color: #ccc;
+    }
+
+    thead{
+        font-size:20px;
+        font-weight: bold;
+        text-align: center;
+        td{
+            width:150px;
+            padding:3px;
+            // border:1px solid #000;
+        }
+    }
+    tbody{
+        font-size:20px;
+        td{
+            width:100px;
+            padding:3px;
+            // border:1px solid #000;
+        }
+    }
+}

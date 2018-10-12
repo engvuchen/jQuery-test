@@ -1,0 +1,42 @@
+html,body {
+	padding: 0px;
+	margin: 0px;
+}
+		
+.container {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+		
+.floatBox {
+	float: left;
+	left: 0px;
+	right: 0px;
+	margin-right: 50px;
+    width: 300px;
+	height: 384.85px;
+}
+.floatBox>img{
+	width:300px;
+}
+		
+.smallBox {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	z-index: 5;
+	background: rgba(255, 250, 232, 0.5);
+}
+		
+.bigBox {
+	display: inline-block;
+	position: relative;
+	width: 384.85px;
+	height: 384.85px;
+	overflow: hidden;
+}
+		
+.bigBox>img {
+    position: absolute;
+}

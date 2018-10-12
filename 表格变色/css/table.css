@@ -1,0 +1,42 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+div.title {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 100px;
+}
+table {
+  display: block;
+  margin-top: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+table tr:nth-of-type(odd) {
+  background-color: #ccffff;
+}
+table tr:nth-of-type(even) {
+  background-color: #ffffcc;
+}
+table tr.title {
+  background-color: #ccc;
+}
+table thead {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+table thead td {
+  width: 150px;
+  padding: 3px;
+}
+table tbody {
+  font-size: 20px;
+}
+table tbody td {
+  width: 100px;
+  padding: 3px;
+}

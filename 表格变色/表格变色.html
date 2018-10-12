@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQ-表格变色</title>
+    <link rel="stylesheet" href="css/table.css">
+    <script src="js/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    <div class="title">员工信息</div>
+    <table cellspacing="0" cellpadding="0" border='1'>
+        <thead>
+            <tr class="title">
+                <td></td>
+                <td>姓名</td>
+                <td>薪水</td>
+                <td>年龄</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class=''>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>张三</td>
+                <td>20000</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>李四</td>
+                <td>22000</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>王五</td>
+                <td>14000</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>马六</td>
+                <td>14000</td>
+                <td>21</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <script>
+        console.log($("input:checkbox"));
+        
+        
+        $("input:checkbox").click(function () {
+            if ($(this).prop("checked")){
+                $(this).parent().parent().css({
+                    "background-color": "yellow"
+                })
+            }
+            else {
+                $(this).parent().parent().css({
+                    
+                    "background-color": ""
+                })
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <style>
+        img {
+            width: 200px;
+            display: inline-block;
+            margin:200px 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img/01.jpg" alt="" class="test">
+
+    <script>
+        $(function () {
+            console.log("run");
+        });
+
+        $(".test").mouseover(function () {
+            console.log(2)
+            $(".test")[0].src = "img/02.jpg";
+        }).mouseleave(function(){
+            $(".test")[0].src = "img/01.jpg";
+        })
+
+
+
+    </script>
+</body>
+
+</html>

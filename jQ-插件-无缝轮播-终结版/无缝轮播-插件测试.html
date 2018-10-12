@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>无缝轮播-插件测试</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jQ-轮播-无缝-类名修改.js"></script>
+	<style>
+		.moveContainer{
+			margin:100px auto;
+		}
+	</style>
+</head>
+<body>
+    <div class="moveContainer">
+        <img src="img/1.jpg" alt="" class='moveItems'>
+        <img src="img/2.jpg" alt="" class='moveItems'>
+        <img src="img/3.jpg" alt="" class='moveItems'>
+        <img src="img/4.jpg" alt="" class='moveItems'>
+        <img src="img/5.jpg" alt="" class='moveItems'>
+        <img src="img/6.jpg" alt="" class='moveItems'>
+    </div>
+
+    <script>
+        /* 
+            1、传入什么参数？
+            option:{
+                "width":xxx,
+                "height":xxx
+                "speed":xxx
+            }
+
+            2、思路：
+            1、解析options
+            2、获取第一张图片的宽度
+            3、根据图片宽度，修改他们的left
+        */
+
+        var options = {
+            "width":600,
+            "height":400,
+            "speed":700
+        }
+
+        $('.moveContainer').noclipMove(options);
+
+    </script>
+</body>
+</html>
